@@ -1,0 +1,45 @@
+<igx-navbar class="landing-page-nav-bar">
+  <igx-navbar-title class="navbar-content">
+    <div [routerLink]="[`/landing-page/landing-page-content`]" class="row-layout app-logo">
+      <igx-icon class="app-icon">
+        coffee
+      </igx-icon>
+      <h6 class="app-title">
+        Artisanal Coffee
+      </h6>
+    </div>
+    <button igxButton="flat" type="button" class="home-nav-button">
+      Home
+    </button>
+    <button igxButton="flat" type="button" class="home-nav-button">
+      How it Works
+    </button>
+    <button igxButton="flat" type="button" class="home-nav-button">
+      Pricing
+    </button>
+    <button igxButton="flat" type="button" class="home-nav-button">
+      Dashboard
+    </button>
+    <button igxButton="flat" type="button" class="home-nav-button">
+      Inventory
+    </button>
+  </igx-navbar-title>
+  <button igxIconButton="flat" class="search-icon">
+    <igx-icon class="icon">
+      search
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat" class="search-icon">
+    <igx-icon class="icon">
+      perm_identity
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat" class="search-icon">
+    <igx-icon class="icon">
+      shopping_cart
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="landing-page-container">
+  <router-outlet></router-outlet>
+</div>

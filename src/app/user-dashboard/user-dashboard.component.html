@@ -1,0 +1,155 @@
+<div class="column-layout dashboard-content">
+  <div class="column-layout dashboard-header">
+    <h4 class="content">
+      My Coffee Dashboard
+    </h4>
+    <p class="content">
+      Manage your subscription, view shipments, and explore your flavor profile.
+    </p>
+  </div>
+  <div class="row-layout dashboard-metrics">
+    <igx-card class="next-shipment-card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="next-shipment-icon next-shipment-icon_1">
+            <igx-icon class="icon">
+              local_shipping
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Next Shipment
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout next-shipment-content">
+          <h3 class="content">
+            Oct 26, 2024
+          </h3>
+          <div class="row-layout next-shipment-details">
+            <p class="ig-typography__subtitle-2 shipment-status">
+              On Schedule
+            </p>
+            <p class="ig-typography__body-2 content">
+              Your next delivery is almost here!
+            </p>
+          </div>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="next-shipment-card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="delivery-calendar-icon delivery-calendar-icon_1">
+            <igx-icon class="icon_1">
+              event
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Delivery Calendar
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout next-shipment-content">
+          <igx-calendar [hasHeader]="false" [value]="date" class="delivery-calendar"></igx-calendar>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="next-shipment-card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="flavor-profile-icon flavor-profile-icon_1">
+            <igx-icon class="icon_2">
+              water_drop
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Coffee Flavor Profile
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+      </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="column-layout next-shipment-content">
+          <igx-pie-chart [dataSource]="coffeeFlavorPreferencesCoffeeFlavorProfiles" labelMemberPath="" valueMemberPath="" class="flavor-profile-chart"></igx-pie-chart>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+  <div class="row-layout dashboard-statistics">
+    <div class="column-layout recent-orders-section">
+      <div class="column-layout dashboard-header">
+        <h5 class="content">
+          Recent Orders
+        </h5>
+        <p class="ig-typography__body-2 content">
+          Your latest coffee deliveries
+        </p>
+      </div>
+      <igx-list class="recent-orders-list">
+        <igx-list-item [selected]="this.recentOrdersListSelectedItem != null && this.recentOrdersListSelectedItem === '0'" (click)="recentOrdersListSelectedItem = '0'">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="order-1-avatar order-1-avatar_1">
+              <igx-icon class="icon_3">
+                coffee
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Ethiopian Yirgacheffe</span>
+          <span igxListLineSubTitle>Delivered Oct 10, 2024</span>
+        </igx-list-item>
+        <igx-list-item [selected]="this.recentOrdersListSelectedItem != null && this.recentOrdersListSelectedItem === '1'" (click)="recentOrdersListSelectedItem = '1'">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="order-1-avatar order-1-avatar_2">
+              <igx-icon class="icon_3">
+                coffee
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Brazilian Santos</span>
+          <span igxListLineSubTitle>Delivered Sep 10, 2024</span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+    <div class="column-layout recent-orders-section">
+      <div class="column-layout dashboard-header">
+        <h5 class="content">
+          Subscription Details
+        </h5>
+        <p class="ig-typography__body-2 content">
+          Your current plan and next billing date
+        </p>
+      </div>
+      <igx-list class="recent-orders-list">
+        <igx-list-item [selected]="this.subscriptionInfoListSelectedItem != null && this.subscriptionInfoListSelectedItem === '0'" (click)="subscriptionInfoListSelectedItem = '0'">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="order-1-avatar order-1-avatar_3">
+              <igx-icon class="icon_3">
+                military_tech
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Current Plan</span>
+          <span igxListLineSubTitle>Enthusiast Brew</span>
+        </igx-list-item>
+        <igx-list-item [selected]="this.subscriptionInfoListSelectedItem != null && this.subscriptionInfoListSelectedItem === '1'" (click)="subscriptionInfoListSelectedItem = '1'">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="order-1-avatar order-1-avatar_4">
+              <igx-icon class="icon_3">
+                payment
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Next Billing Date</span>
+          <span igxListLineSubTitle>Oct 26, 2024</span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="row-layout registration-form-row-layout">
+  <div class="column-layout registration-form-column-layout">
+    <div class="column-layout registration-form-header">
+      <h4 class="content">
+        Create Account
+      </h4>
+      <h6 class="content">
+        Sign up to start your coffee journey
+      </h6>
+    </div>
+    <div class="column-layout registration-form-fields">
+      <igx-input-group type="border" class="full-name-input">
+        <input type="text" [(ngModel)]="value" placeholder="Enter your full name" required="true" igxInput #igxInput />
+        <label igxLabel>Full Name</label>
+        @if (igxInput.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="full-name-input">
+        <input type="email" [(ngModel)]="value1" placeholder="your.email@example.com" required="true" igxInput #igxInput1 />
+        <label igxLabel>Email address</label>
+        @if (igxInput1.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="full-name-input">
+        <input type="password" [(ngModel)]="value2" placeholder="Create a password" required="true" igxInput #igxInput2 />
+        <label igxLabel>Password</label>
+        @if (igxInput2.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="full-name-input">
+        <input type="password" [(ngModel)]="value3" placeholder="Confirm your password" required="true" igxInput #igxInput3 />
+        <label igxLabel>Password</label>
+        @if (igxInput3.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <button igxButton="contained" type="button" class="create-account-button">
+        Create account
+      </button>
+    </div>
+    <div class="row-layout login-prompt">
+      <p class="ig-typography__body-2 content">
+        Already have an account?
+      </p>
+      <a target="_blank" [routerLink]="[`/landing-page/login-page`]" class="ig-typography__body-2 sign-in-link">
+        Sign in
+      </a>
+    </div>
+  </div>
+</div>

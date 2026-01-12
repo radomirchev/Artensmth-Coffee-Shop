@@ -1,0 +1,89 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+}
+.row-layout {
+  display: flex;
+}
+.registration-form-row-layout {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  padding: 32px;
+  min-width: min-content;
+  min-height: 0;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.registration-form-column-layout {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  min-width: 320px;
+  min-height: 50px;
+  max-width: 560px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.registration-form-header {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.registration-form-fields {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.login-prompt {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.sign-in-link {
+  color: var(--ig-info-500);
+  cursor: pointer;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.full-name-input {
+  height: max-content;
+  min-width: min-content;
+}
+.create-account-button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}

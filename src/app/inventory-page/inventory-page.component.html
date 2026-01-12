@@ -1,0 +1,333 @@
+<div class="row-layout inventory-section">
+  <div class="column-layout inventory-wrapper">
+    <div class="column-layout inventory-header">
+      <h3 class="content">
+        Coffee Inventory
+      </h3>
+      <p class="content">
+        Track the stock levels of your favorite artisanal coffees.
+      </p>
+    </div>
+    <div class="row-layout inventory-content">
+      <div class="column-layout product-filters">
+        <div class="column-layout inventory-header">
+          <igx-list class="category-list">
+            <igx-list-item [isHeader]="true">Category</igx-list-item>
+            <igx-list-item [selected]="this.categoryListSelectedItem != null && this.categoryListSelectedItem === '1'" (click)="categoryListSelectedItem = '1'">
+              <span igxListLineTitle>Single Origin</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.categoryListSelectedItem != null && this.categoryListSelectedItem === '2'" (click)="categoryListSelectedItem = '2'">
+              <span igxListLineTitle>Blends</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.categoryListSelectedItem != null && this.categoryListSelectedItem === '3'" (click)="categoryListSelectedItem = '3'">
+              <span igxListLineTitle>Decaf</span>
+            </igx-list-item>
+          </igx-list>
+          <a class="ig-typography__body-2 see-more-categories">
+            See more
+          </a>
+        </div>
+        <igx-list class="category-list">
+          <igx-list-item [isHeader]="true">Stock Level</igx-list-item>
+          <igx-list-item [selected]="this.stockLevelListSelectedItem != null && this.stockLevelListSelectedItem === '1'" (click)="stockLevelListSelectedItem = '1'">
+            <span igxListLineTitle>High Stock</span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.stockLevelListSelectedItem != null && this.stockLevelListSelectedItem === '2'" (click)="stockLevelListSelectedItem = '2'">
+            <span igxListLineTitle>Medium Stock</span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.stockLevelListSelectedItem != null && this.stockLevelListSelectedItem === '3'" (click)="stockLevelListSelectedItem = '3'">
+            <span igxListLineTitle>Low Stock</span>
+          </igx-list-item>
+        </igx-list>
+      </div>
+      <div class="column-layout product-list-right-content">
+        <div class="row-layout product-list-sort">
+          <p class="content">
+            Showing 1-5 of 5 results
+          </p>
+          <igx-select type="box" [(ngModel)]="value" class="sort-by-select">
+            <igx-select-item value="1">
+              Featured
+            </igx-select-item>
+            <igx-select-item value="2">
+              Recently added
+            </igx-select-item>
+            <igx-select-item value="3">
+              Price low to high
+            </igx-select-item>
+            <igx-select-item value="4">
+              Price high to low
+            </igx-select-item>
+            <label igxLabel>Sort by</label>
+          </igx-select>
+        </div>
+        <div class="row-layout product-cards">
+          <igx-card class="colombian-supremo">
+            <igx-card-media height="200px" class="media-content">
+              <img src="/assets/Auto%20generated%20image%20for%2081c9fd1d-eeec-4dbd-9bbe-93615b4521f2-22ae6cf1-6b64-4749-a440-423d420e7c97.png" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Colombian Supremo
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Smooth &amp; Balanced
+              </h5>
+            </igx-card-header>
+            <igx-card-content class="body-content">
+              <div class="column-layout colombian-supremo-content">
+                <div class="row-layout colombian-supremo-rating">
+                  <igc-rating [(ngModel)]="ngModel" class="colombian-supremo-stars"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (150)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $14.99
+                </h6>
+                <div class="row-layout colombian-supremo-stock">
+                  <igx-badge type="success" value="In Stock" class="colombian-supremo-stock-badge"></igx-badge>
+                  <button igxIconButton="flat" class="colombian-supremo-edit">
+                    <igx-icon>
+                      edit
+                    </igx-icon>
+                  </button>
+                </div>
+              </div>
+            </igx-card-content>
+            <igx-card-actions class="actions-content">
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="colombian-supremo-add">
+                  <igx-icon>
+                    add_shopping_cart
+                  </igx-icon>
+                  <span>Add to cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="colombian-supremo">
+            <igx-card-media height="200px" class="media-content">
+              <img src="/assets/Auto%20generated%20image%20for%2075baf07f-a995-475f-9e96-17d675f77884-eaf424a8-7f77-498f-a59c-0be1ee983c36.png" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Ethiopian Yirgacheffe
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Fruity &amp; Floral
+              </h5>
+            </igx-card-header>
+            <igx-card-content class="body-content">
+              <div class="column-layout colombian-supremo-content">
+                <div class="row-layout colombian-supremo-rating">
+                  <igc-rating [(ngModel)]="ngModel1" class="colombian-supremo-stars"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (200)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $16.50
+                </h6>
+                <div class="row-layout colombian-supremo-stock">
+                  <igx-badge type="Warn" value="Low Stock" class="colombian-supremo-stock-badge"></igx-badge>
+                  <button igxIconButton="flat" class="colombian-supremo-edit">
+                    <igx-icon>
+                      edit
+                    </igx-icon>
+                  </button>
+                </div>
+              </div>
+            </igx-card-content>
+            <igx-card-actions class="actions-content">
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="colombian-supremo-add">
+                  <igx-icon>
+                    add_shopping_cart
+                  </igx-icon>
+                  <span>Add to cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="colombian-supremo">
+            <igx-card-media height="200px" class="media-content">
+              <img src="/assets/Auto%20generated%20image%20for%2057fdd465-7c81-412e-a772-b5da8e0abfd1-52789c2a-69cb-4032-9fee-396346452541.png" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Brazilian Santos
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Nutty &amp; Chocolatey
+              </h5>
+            </igx-card-header>
+            <igx-card-content class="body-content">
+              <div class="column-layout colombian-supremo-content">
+                <div class="row-layout colombian-supremo-rating">
+                  <igc-rating [(ngModel)]="ngModel2" class="colombian-supremo-stars"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (180)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $12.75
+                </h6>
+                <div class="row-layout colombian-supremo-stock">
+                  <igx-badge type="success" value="In Stock" class="colombian-supremo-stock-badge"></igx-badge>
+                  <button igxIconButton="flat" class="colombian-supremo-edit">
+                    <igx-icon>
+                      edit
+                    </igx-icon>
+                  </button>
+                </div>
+              </div>
+            </igx-card-content>
+            <igx-card-actions class="actions-content">
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="colombian-supremo-add">
+                  <igx-icon>
+                    add_shopping_cart
+                  </igx-icon>
+                  <span>Add to cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="colombian-supremo">
+            <igx-card-media height="200px" class="media-content">
+              <img src="/assets/Auto%20generated%20image%20for%207485d9d3-3caa-4e2a-8f43-5537e2069b01-265ad33c-e657-4804-bf85-6bcaeb375f63.png" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Sumatran Mandheling
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Earthy &amp; Bold
+              </h5>
+            </igx-card-header>
+            <igx-card-content class="body-content">
+              <div class="column-layout colombian-supremo-content">
+                <div class="row-layout colombian-supremo-rating">
+                  <igc-rating [(ngModel)]="ngModel3" class="colombian-supremo-stars"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (100)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $15.50
+                </h6>
+                <div class="row-layout colombian-supremo-stock">
+                  <igx-badge type="success" value="In Stock" class="colombian-supremo-stock-badge"></igx-badge>
+                  <button igxIconButton="flat" class="colombian-supremo-edit">
+                    <igx-icon>
+                      edit
+                    </igx-icon>
+                  </button>
+                </div>
+              </div>
+            </igx-card-content>
+            <igx-card-actions class="actions-content">
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="colombian-supremo-add">
+                  <igx-icon>
+                    add_shopping_cart
+                  </igx-icon>
+                  <span>Add to cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="colombian-supremo">
+            <igx-card-media height="200px" class="media-content">
+              <img src="/assets/Auto%20generated%20image%20for%20d0c9e75d-a576-4a9f-b745-88e6754de65f-6abd3d77-9d2e-4009-8385-6a994e1ae490.png" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Guatemalan Antigua
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Spicy &amp; Smoky
+              </h5>
+            </igx-card-header>
+            <igx-card-content class="body-content">
+              <div class="column-layout colombian-supremo-content">
+                <div class="row-layout colombian-supremo-rating">
+                  <igc-rating [(ngModel)]="ngModel4" class="colombian-supremo-stars"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (130)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $13.99
+                </h6>
+                <div class="row-layout colombian-supremo-stock">
+                  <igx-badge type="success" value="In Stock" class="colombian-supremo-stock-badge"></igx-badge>
+                  <button igxIconButton="flat" class="colombian-supremo-edit">
+                    <igx-icon>
+                      edit
+                    </igx-icon>
+                  </button>
+                </div>
+              </div>
+            </igx-card-content>
+            <igx-card-actions class="actions-content">
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="colombian-supremo-add">
+                  <igx-icon>
+                    add_shopping_cart
+                  </igx-icon>
+                  <span>Add to cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="colombian-supremo">
+            <igx-card-media height="200px" class="media-content">
+              <img src="/assets/Auto%20generated%20image%20for%20137f0fcb-0cff-4d10-9f82-3c9b0fc5e760-922a71e3-cf20-42a6-b5e7-f5fa1c293ba6.png" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Kenyan AA
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Bright &amp; Berry
+              </h5>
+            </igx-card-header>
+            <igx-card-content class="body-content">
+              <div class="column-layout colombian-supremo-content">
+                <div class="row-layout colombian-supremo-rating">
+                  <igc-rating [(ngModel)]="ngModel5" class="colombian-supremo-stars"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (190)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $17.25
+                </h6>
+                <div class="row-layout colombian-supremo-stock">
+                  <igx-badge type="success" value="In Stock" class="colombian-supremo-stock-badge"></igx-badge>
+                  <button igxIconButton="flat" class="colombian-supremo-edit">
+                    <igx-icon>
+                      edit
+                    </igx-icon>
+                  </button>
+                </div>
+              </div>
+            </igx-card-content>
+            <igx-card-actions class="actions-content">
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="colombian-supremo-add">
+                  <igx-icon>
+                    add_shopping_cart
+                  </igx-icon>
+                  <span>Add to cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

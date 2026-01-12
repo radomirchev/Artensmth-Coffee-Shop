@@ -1,0 +1,193 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+}
+.row-layout {
+  display: flex;
+}
+.inventory-section {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  padding: 48px 32px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.inventory-wrapper {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 1400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.inventory-header {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.inventory-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.product-filters {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 240px;
+  min-height: 50px;
+}
+.product-list-right-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.product-list-sort {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  flex-shrink: 0;
+}
+.product-cards {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.colombian-supremo {
+  --header-text-color: var(--ig-card-header-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --subtitle-text-color: var(--ig-card-subtitle-text-color, lch(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) calc(l + (50 - l) * 0.1 + sign(50 - l) * 7) c h));
+  --content-text-color: var(--ig-card-content-text-color, lch(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) calc(l + (50 - l) * 0.1 + sign(50 - l) * 7) c h));
+  --actions-text-color: var(--ig-card-actions-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --background: var(--ig-surface-200);
+  height: max-content;
+  min-width: 160px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.colombian-supremo-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.colombian-supremo-rating {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.colombian-supremo-stock {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.see-more-categories {
+  color: var(--ig-info-500);
+  height: max-content;
+  min-width: min-content;
+}
+.image {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.media-content {
+  min-height: 200px;
+  max-height: 200px;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.category-list {
+  height: max-content;
+}
+.sort-by-select {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.colombian-supremo-stars {
+  --ig-size: var(--ig-size-small);
+  width: max-content;
+  height: max-content;
+}
+.colombian-supremo-edit {
+  --ig-size: var(--ig-size-small);
+}
+.colombian-supremo-add {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.colombian-supremo-stock-badge {
+  width: max-content;
+  height: max-content;
+}

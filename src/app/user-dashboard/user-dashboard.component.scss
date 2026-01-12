@@ -1,0 +1,175 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  overflow: auto;
+  position: relative;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.dashboard-header {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.dashboard-metrics {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  flex-shrink: 0;
+}
+.next-shipment-card {
+  --header-text-color: var(--ig-card-header-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --subtitle-text-color: var(--ig-card-subtitle-text-color, lch(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) calc(l + (50 - l) * 0.1 + sign(50 - l) * 7) c h));
+  --content-text-color: var(--ig-card-content-text-color, lch(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) calc(l + (50 - l) * 0.1 + sign(50 - l) * 7) c h));
+  --actions-text-color: var(--ig-card-actions-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --background: var(--ig-card-background, var(--surface-500));
+  height: max-content;
+  min-width: 260px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.next-shipment-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+}
+.next-shipment-details {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+  flex-shrink: 0;
+}
+.dashboard-statistics {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.recent-orders-section {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 360px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.next-shipment-icon {
+  --igx-avatar-background: var(--ig-info-500);
+}
+.icon {
+  color: var(--ig-info-500-contrast);
+}
+.shipment-status {
+  color: var(--ig-success-500);
+  height: max-content;
+  min-width: min-content;
+}
+.delivery-calendar-icon {
+  --igx-avatar-background: var(--ig-warn-500);
+}
+.icon_1 {
+  color: var(--ig-warn-500-contrast);
+}
+.delivery-calendar {
+  width: max-content;
+  height: max-content;
+  min-width: max-content;
+}
+.flavor-profile-icon {
+  --igx-avatar-background: var(--ig-error-500);
+}
+.icon_2 {
+  color: var(--ig-error-500-contrast);
+}
+.order-1-avatar {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: var(--ig-primary-100);
+}
+.icon_3 {
+  color: var(--ig-primary-100-contrast);
+}
+.next-shipment-icon_1::part(base) {
+  --igx-avatar-color: var(--ig-info-500-contrast);
+}
+.delivery-calendar-icon_1::part(base) {
+  --igx-avatar-color: var(--ig-warn-500-contrast);
+}
+.flavor-profile-icon_1::part(base) {
+  --igx-avatar-color: var(--ig-error-500-contrast);
+}
+.order-1-avatar_1::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.order-1-avatar_2::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.order-1-avatar_3::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.order-1-avatar_4::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.flavor-profile-chart {
+  min-width: 250px;
+  min-height: 250px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.recent-orders-list {
+  height: max-content;
+}
