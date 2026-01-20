@@ -1,3 +1,0 @@
-export const CoffeeFlavorPreferences: Record<string, any> = {
-  'CoffeeFlavorProfilesType': [{"flavor":"Chocolate","percentage":30},{"flavor":"Nutty","percentage":25},{"flavor":"Fruity","percentage":20},{"flavor":"Floral","percentage":15},{"flavor":"Spicy","percentage":10}],
-};
